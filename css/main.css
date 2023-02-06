@@ -35,13 +35,20 @@ img {
 
 /* HEADER */
 header {
-  background-color: skyblue;
+  /* position:fixed => 스크롤을 따라오도록 */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f6f5ef;
+  border-top: 2px solid black;
+  border-bottom:1px solid #eae7e2;
+  z-index: 1;
 }
 
 header .inner .logo {
   /* 부모 위치를 기준으로 */
   position: absolute;
-  margin: auto;
+  margin: auto 0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -49,3 +56,12 @@ header .inner .logo {
   height: 75px;
   width: 75px;
 }
+
+/* Sub menu */
+header .inner sub-menu {}
+header .inner .sub-menu .sub-menu__menu {}
+header .inner .sub-menu .sub-menu__menu > li {}
+header .inner .sub-menu .sub-menu__menu > li > a {}
+header .inner .sub-menu .search {}
+header .inner .sub-menu .search > input {}
+header .inner .sub-menu .search > .material-symbols-outlined {}
