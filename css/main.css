@@ -130,3 +130,8 @@ header .inner .sub-menu .search > .material-symbols-outlined {
   height: 24px;
   font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
 }
+
+/* Main menu */
+header .inner .main-menu {}
+header .inner .main-menu .item {}
+header .inner .main-menu .item .item__name {}
