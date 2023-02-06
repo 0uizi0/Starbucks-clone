@@ -46,6 +46,7 @@ header {
 }
 
 header .inner .logo {
+  display: none;
   /* 부모 위치를 기준으로 */
   position: absolute;
   margin: auto 0;
@@ -55,13 +56,54 @@ header .inner .logo {
   right: 0;
   height: 75px;
   width: 75px;
+  border: 2px solid green;
 }
 
 /* Sub menu */
-header .inner sub-menu {}
-header .inner .sub-menu .sub-menu__menu {}
-header .inner .sub-menu .sub-menu__menu > li {}
-header .inner .sub-menu .sub-menu__menu > li > a {}
-header .inner .sub-menu .search {}
-header .inner .sub-menu .search > input {}
-header .inner .sub-menu .search > .material-symbols-outlined {}
+header .inner .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 50px;
+  border: 2px solid red;
+}
+header .inner .sub-menu .sub-menu__menu {
+  display: flex;
+  margin: auto;
+}
+header .inner .sub-menu .sub-menu__menu > li {
+}
+header .inner .sub-menu  .sub-menu__menu > li > a {
+  color: #656565;
+  font-size: 13px;
+  padding: 10px 15px;
+}
+header .inner .sub-menu .sub-menu__menu > li > a:hover {
+  text-decoration: underline;
+}
+header .inner .sub-menu  .sub-menu__menu > li::after {
+  content: "|";
+  column-rule: #656565;
+}
+header .inner .sub-menu .search {
+  position: relative;
+}
+header .inner .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  transition: width 0.4s;
+}
+header .inner .sub-menu .search > .material-symbols-outlined {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  height: 23px;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+}
