@@ -62,7 +62,6 @@ header .inner .sub-menu {
   position: absolute;
   top: 6px;
   right: 50px;
-  border: 1px solid blue;
 }
 header .inner .sub-menu .sub-menu__menu {
   display: flex;
@@ -140,10 +139,21 @@ header .inner .main-menu {
   bottom: 0;
 }
 header .inner .main-menu .item {
+  /* 기존 코드 ~~> */
+  /* padding: 10px 20px 34px 20px;
+  font-size: 13px; */
+  /* <~~ 기존 코드 */
+}
+header .inner .main-menu .item:hover .item__name{
+  background-color: #2c2a29;
+  color: #669900;
+  /* 추가한 코드 */
+  cursor: pointer;
+  text-decoration: underline;
+}
+header .inner .main-menu .item .item__name {
+  /* 추가한 코드(풀이코드) ~~> */
   padding: 10px 20px 34px 20px;
   font-size: 13px;
+  /* <~~ 추가한 코드(풀이코드) */
 }
-header .inner .main-menu .item:hover {
-  background-color: #2c2a29;
-}
-header .inner .main-menu .item .item__name {}
