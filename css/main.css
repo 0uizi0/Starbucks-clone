@@ -45,7 +45,6 @@ header {
 }
 
 header .inner .logo {
-  display: none;
   /* 부모 위치를 기준으로 */
   position: absolute;
   margin: auto 0;
@@ -55,7 +54,6 @@ header .inner .logo {
   right: 0;
   height: 75px;
   width: 75px;
-  border: 2px solid green;
 }
 
 /* Sub menu */
