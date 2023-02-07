@@ -273,6 +273,9 @@ header .badges .badge img {
   background-position: center;
   /* 추가한 풀이 코드 */
   background-repeat: no-repeat;
+  /* 비율이 줄어들 때 배경 이미지 조정*/
+  background-position: center;
+  background-size: 106% 100%;
 }
 
 .visual .inner {
