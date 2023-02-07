@@ -163,6 +163,9 @@ header .inner .main-menu .item .item__name {
 
 header .inner .main-menu .item .item__contents {
   display: none;
+  /* hover 효과 적용 위해 display: none; 삭제 후 새 코드 삽입 */
+  /* transform: scaleY(0);
+  transform-origin: center top; transform 시작점 */
   position: fixed;
   top: 120px;
   left: 0;
@@ -171,6 +174,9 @@ header .inner .main-menu .item .item__contents {
 
 header .inner .main-menu .item:hover .item__contents {
   display: block;
+  /* hover 효과 적용 */
+  /* transform: scaleY(1);
+  transition: 0.5s; */
 }
 
 header .inner .main-menu .item .item__contents .item__contents__menu {
