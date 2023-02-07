@@ -218,3 +218,8 @@ header .inner .main-menu .item .item__contents .item__contents__menu .inner > li
   cursor: pointer;
   text-decoration: underline;
 }
+
+/* BADGES */
+header .badges {}
+header .badges .badge {}
+header .badges .badge img {}
