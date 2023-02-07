@@ -32,6 +32,10 @@ img {
   margin: 0 auto;
 }
 
+.strong {
+  font-weight: 600;
+}
+
 /* BUTTON */
 .btn {
   display: inline-block;
@@ -425,4 +429,74 @@ header .badges .badge img {
 .notice .notice-line .inner .inner__right a span {
   font-size: 36px;
   display: block; /*중앙정렬 해결*/
+}
+
+/* REWARDS */
+.rewards {
+  background-color: #1e3932;
+}
+.rewards .inner {
+  position: relative;
+  display: flex;
+  padding: 30px 0 40px 0;
+}
+.rewards .inner .rewards__logo {
+  width: 260px;
+  align-items: center;
+}
+.rewards .inner .rewards__logo img {
+  display: block;
+  width: 176px;
+}
+.rewards .inner .rewards__items {
+  flex-grow: 1;
+}
+.rewards .inner .rewards__items .rewards__items__register {
+  position: relative;
+  padding-bottom: 12px;
+  box-shadow: 0 0.5px #c8c8c8;
+}
+.rewards .inner .rewards__items .rewards__items__register p {
+  display: block; /*자기 공간만큼 차지할 수 있도록*/
+  font-size: 17px;
+  color: white;
+}
+.rewards .inner .rewards__items .rewards__items__register p.subject {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.rewards .inner .rewards__items .rewards__items__register .buttons {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+.rewards .inner .rewards__items .rewards__items__register .buttons .btn--register {
+  background-color: #00704a;
+  border-color: #00704a;
+  color: white;
+  margin-right: 6px;
+  font-weight: 700;
+}
+.rewards .inner .rewards__items .rewards__items__register .buttons .btn--login, .rewards .inner .rewards__items .rewards__items__card .buttons .btn--login {
+  border-color: white;
+  color: white;
+  font-weight: 700;
+}
+.rewards .inner .rewards__items .rewards__items__register .buttons .btn--register:hover, .rewards .inner .rewards__items .rewards__items__register .buttons .btn--login:hover, .rewards .inner .rewards__items .rewards__items__card .buttons .btn--login:hover {
+  text-decoration: underline;
+}
+
+.rewards .inner .rewards__items .rewards__items__card {
+  position: relative;
+}
+.rewards .inner .rewards__items .rewards__items__card p {
+  display: block;
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+}
+.rewards .inner .rewards__items .rewards__items__card .buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
