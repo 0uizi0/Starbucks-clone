@@ -916,39 +916,75 @@ header .badges .badge img {
   width: 385px;
   top: 100px;
   right: 50px;
+  /* 애니메이션 효과 적용 */
+  transform: translateX(900px);
+  transition: 2s;
 }
 .store .inner .store__text-2 {
   position: absolute;
   width: 366px;
   top: 170px;
   right: 69px;
+  /* 애니메이션 효과 적용 */
+  transform: translateX(900px);
+  transition: 2.5s;
 }
 .store .inner .store__img-1 {
   position: absolute;
   width: 366px;
   top: 0;
   left: 70px;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+  transition: 1.5s;
 }
 .store .inner .store__img-2 {
   position: absolute;
   width: 228px;
   top: 150px;
   left: 300px;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+  transition: 1.5s;
 }
 .store .inner .store__img-3 {
   position: absolute;
   width: 348px;
   top: -60px;
   left: 430px;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+  transition: 1.5s;
 }
 .store .inner .store__img-4 {
   position: absolute;
   width: 230px;
   right: -70px;
   bottom: 0;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+  transition: 1.5s;
 }
 .store .inner .btn.btn--black {
   position: absolute;
   top: 290px;
   right: 330px;
+  /* 애니메이션 효과 적용 */
+  transform: translateX(900px);
+}
+
+.store:active .inner .store__img-1,
+.store:active .inner .store__img-2,
+.store:active .inner .store__img-3,
+.store:active .inner .store__img-4 {
+  opacity: 1;
+}
+
+.store:active .inner .store__text-1,
+.store:active .inner .store__text-2{
+  transform: translateX(0);
+}
+.store:active .inner .btn.btn--black {
+  transform: translateX(0);
+  transition: transform 3s, background-color 0.6s, color 0.6s, text-decoration 0.6s;
 }
