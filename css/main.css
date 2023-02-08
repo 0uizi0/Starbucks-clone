@@ -525,26 +525,51 @@ header .badges .badge img {
   overflow: hidden;
 }
 .elsalvador .inner {
-  display: flex;
+  /* 내가 쓴 코드 ~~> */
+  /* display: flex;
   top: 50px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: relative;
 }
 .elsalvador .inner .elsalvador__item {
-  position: relative;
+  /* 내가 쓴 코드 ~~> */
+  /* position: relative;
   display: block;
   width: 310px;
   left: 20px;
-  top: 30px;
+  top: 30px; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 310px;
+  top: 70px;
+  left: 110px;
 }
 .elsalvador .inner .elsalvador__contents{
-  position: relative;
+  /* 내가 쓴 코드 ~~> */
+  /* position: relative;
   display: block;
-  right: 50px;
+  right: 50px; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 339px;
+  top: 180px;
+  right: 140px;
 }
 .elsalvador .inner .elsalvador__contents .item-text{
-  display: block;
-  margin-bottom: 30px;
+  /* 내가 쓴 코드 ~~> */
+  /* display: block;
+  margin-bottom: 30px; */
+  /* <~~ 내가 쓴 코드 */
 }
 .elsalvador .inner .elsalvador__contents .btn.btn--brown{
+  /* 풀이 코드 */
+  margin-top: 40px;
 }
