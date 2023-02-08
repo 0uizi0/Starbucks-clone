@@ -96,6 +96,18 @@ img {
   text-decoration: underline;
 }
 
+.btn--black {
+  border-color: #000;
+  color: #000;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.btn--black:hover {
+  background-color: #000;
+  color: white;
+  text-decoration: underline;
+}
+
 /* HEADER */
 header {
   /* position:fixed => 스크롤을 따라오도록 */
@@ -819,4 +831,32 @@ header .badges .badge img {
   position: absolute;
   top: 580px;
   left: 238px;
+}
+
+/* MAGAZINE */
+.magazine {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/magazine_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 60px;
+}
+.magazine .inner {
+}
+.magazine .inner .magazine__text {
+  position: absolute;
+  width: 588px;
+  top: 150px;
+}
+.magazine .inner .magazine__imgs {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 348px;
+}
+.magazine .inner .btn.btn--black{
+  position: absolute;
+  top: 300px;
+  left: 240px;
 }
