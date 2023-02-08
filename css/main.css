@@ -549,6 +549,10 @@ header .badges .badge img {
   width: 310px;
   top: 70px;
   left: 110px;
+  /* 애니메이션 효과 적용 */
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 2.5s;
 }
 .elsalvador .inner .elsalvador__contents{
   /* 내가 쓴 코드 ~~> */
@@ -562,6 +566,15 @@ header .badges .badge img {
   width: 339px;
   top: 180px;
   right: 140px;
+  /* 애니메이션 효과 적용 */
+  transform: translateX(900px);
+  opacity: 0;
+  transition: 2.5s;
+}
+.elsalvador:active .inner .elsalvador__item , 
+.elsalvador:active .inner .elsalvador__contents {
+  transform: translateX(0);
+  opacity: 1;
 }
 .elsalvador .inner .elsalvador__contents .item-text{
   /* 내가 쓴 코드 ~~> */
