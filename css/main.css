@@ -897,3 +897,58 @@ header .badges .badge img {
   top: 270px;
   left: 295px;
 }
+
+/* STORE */
+.store {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/store_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.store .inner {
+  height: 400px;
+}
+.store .inner .store__text-1 {
+  position: absolute;
+  width: 385px;
+  top: 100px;
+  right: 50px;
+}
+.store .inner .store__text-2 {
+  position: absolute;
+  width: 366px;
+  top: 170px;
+  right: 69px;
+}
+.store .inner .store__img-1 {
+  position: absolute;
+  width: 366px;
+  top: 0;
+  left: 70px;
+}
+.store .inner .store__img-2 {
+  position: absolute;
+  width: 228px;
+  top: 150px;
+  left: 300px;
+}
+.store .inner .store__img-3 {
+  position: absolute;
+  width: 348px;
+  top: -60px;
+  left: 430px;
+}
+.store .inner .store__img-4 {
+  position: absolute;
+  width: 230px;
+  right: -70px;
+  bottom: 0;
+}
+.store .inner .btn.btn--black {
+  position: absolute;
+  top: 290px;
+  right: 330px;
+}
