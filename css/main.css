@@ -70,6 +70,19 @@ img {
   text-decoration: underline;
 }
 
+.btn--gold {
+  border-color: #966932;
+  color: #966932;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn--gold:hover {
+  background-color: #966932;
+  color: white;
+  text-decoration: underline;
+}
+
 /* HEADER */
 header {
   /* position:fixed => 스크롤을 따라오도록 */
@@ -585,4 +598,45 @@ header .badges .badge img {
 .elsalvador .inner .elsalvador__contents .btn.btn--brown{
   /* 풀이 코드 */
   margin-top: 40px;
+}
+
+/* ETHIOPIA */
+.ethiopia {
+  height: 400px;
+  display: flex;
+  background-image: url("../images/ethiopia_bg.png");
+}
+.ethiopia::before{
+  display: block;
+  position: relative;
+  content: "";
+  width: 400px;
+  background-image: url("../images/ethiopia_before.png");
+  left: -40px;
+  background-repeat: no-repeat;
+}
+.ethiopia::after {
+  content: "";
+  width: 361px;
+  background-image: url("../images/ethiopia_after.png");
+  background-repeat: no-repeat;
+}
+.ethiopia .inner {
+  position: relative;
+  height: 100%;
+}
+.ethiopia .inner .ethiopia__contents {
+  position: absolute;
+  display: block;
+  top: 100px;
+}
+.ethiopia .inner .ethiopia__item{
+  position: absolute;
+  display: block;
+  left: -500px;
+}
+.ethiopia .inner .btn.btn--gold {
+  position: absolute;
+  top: 250px;
+  left: 250px;
 }
