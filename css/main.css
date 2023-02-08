@@ -635,7 +635,10 @@ header .badges .badge img {
   background-image: url("../images/ethiopia_before.png");
   background-size: cover; /* 긴 축에 이미지 크기를 맞춤*/
   background-repeat: no-repeat;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
 }
+
 .ethiopia::after {
   /* 내가 쓴 코드 ~~> */
   /* content: "";
@@ -654,6 +657,13 @@ header .badges .badge img {
   background-image: url("../images/ethiopia_after.png");
   background-size: cover; /* 긴 축에 이미지 크기를 맞춤*/
   background-repeat: no-repeat;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+}
+.ethiopia:active::before,
+.ethiopia:active::after {
+  transition: 1.5s;
+  opacity: 1;
 }
 .ethiopia .inner {
   /* 내가 쓴 코드 ~~> */
@@ -686,6 +696,13 @@ header .badges .badge img {
   /* 풀이 코드 */
   position: absolute;
   left: -500px;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+}
+.ethiopia:active .inner .ethiopia__item{
+  transition: 1.5s;
+  transition-delay: 0.8s;
+  opacity: 1;
 }
 .ethiopia .inner .btn.btn--gold {
   /* 내가 쓴 코드 ~~> */
