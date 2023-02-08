@@ -732,6 +732,7 @@ header .badges .badge img {
 
 /* FAVORITE */
 .favorite {
+  /* 내가 쓴 코드 
   position: fixed;
   width: 1900px;
   height: 800px;
@@ -740,34 +741,70 @@ header .badges .badge img {
   background-image: url("../images/fav_bg.png");
   background-repeat: no-repeat;
   background-size: 125%;
-  background-position-y: center;
+  background-position-y: center; */
+
+  /* 풀이 코드 */
+  position: relative;
+  height: 800px;
+  background-image: url("../images/fav_bg.png");
+  background-size: cover;
+  background-attachment: fixed; /*백그라운드가 스크롤에 따라서 뷰포트를 따라오는 것 같이 설정*/
 }
 .favorite .inner{
+  /* 내가 쓴 코드 
   position: relative;
-  height: 100%;
+  height: 100%; */
+
+  /* 풀이 코드 */
 }
 .favorite .inner .fav__title {
+  /* 내가 쓴 코드 
   position: absolute;
   top: 120px;
   left: 100px;
   width: 258px;
-  height: 204px;
+  height: 204px; */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 258px;
+  top: 120px;
+  left: 108px;
 }
 .favorite .inner .fav__contents {
+  /* 내가 쓴 코드 
   position: absolute;
   bottom: 270px;
   width: 362px;
-  height: 156px;
+  height: 156px; */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 362px;
+  top: 370px;
 }
 .favorite .inner .fav__imgs {
+  /* 내가 쓴 코드 
   position: absolute;
   top: 170px;
   left: 440px;
   width: 912px;
-  height: 588px;
+  height: 588px; */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 912px;
+  top: 100px;
+  right: -260px
 }
 .favorite .inner .btn.btn--white{
+  /* 내가 쓴 코드 
   position: absolute;
   bottom: 170px;
-  left: 240px;
+  left: 240px; */
+
+  /* 풀이 코드 */
+  position: absolute;
+  top: 580px;
+  left: 238px;
 }
