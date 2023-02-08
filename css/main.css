@@ -878,6 +878,13 @@ header .badges .badge img {
   width: 348px;
   right: 50px;
   top: 0;
+  /* 애니메이션 효과 적용 */
+  opacity: 0;
+  transition: 1.5s;
+
+}
+.magazine:active .inner .magazine__imgs {
+  opacity: 1;
 }
 .magazine .inner .btn.btn--black{
   /* 내가 쓴 코드 
