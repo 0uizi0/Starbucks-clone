@@ -500,3 +500,11 @@ header .badges .badge img {
   bottom: 0;
   right: 0;
 }
+
+/* ELSALVADOR */
+.elsalvador{}
+.elsalvador .inner {}
+.elsalvador .inner .elsalvador__item {}
+.elsalvador .inner .elsalvador__contents{}
+.elsalvador .inner .elsalvador__contents .item-text{}
+.elsalvador .inner .elsalvador__contents .btn.btn--brown{}
