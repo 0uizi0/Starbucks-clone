@@ -835,28 +835,58 @@ header .badges .badge img {
 
 /* MAGAZINE */
 .magazine {
+  /* 내가 쓴 코드 
   position: relative;
   height: 400px;
   background-image: url("../images/magazine_bg.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 60px;
+  background-position: center 60px; */
+
+  /* 풀이 코드 */
+  position: relative;
+  height: 400px;
+  background-image: url("../images/magazine_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  overflow: hidden;
 }
 .magazine .inner {
 }
 .magazine .inner .magazine__text {
+  /* 내가 쓴 코드 
   position: absolute;
   width: 588px;
-  top: 150px;
+  top: 150px; */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 588px;
+  top: 135px;
+  left: 60px;
 }
 .magazine .inner .magazine__imgs {
+  /* 내가 쓴 코드 
   position: absolute;
   top: 0;
   right: 100px;
+  width: 348px; */
+
+  /* 풀이 코드 */
+  position: absolute;
   width: 348px;
+  right: 50px;
+  top: 0;
 }
 .magazine .inner .btn.btn--black{
+  /* 내가 쓴 코드 
   position: absolute;
   top: 300px;
-  left: 240px;
+  left: 240px; */
+
+  /* 풀이 코드 */
+  position: absolute;
+  top: 270px;
+  left: 295px;
 }
