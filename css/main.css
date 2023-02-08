@@ -602,41 +602,100 @@ header .badges .badge img {
 
 /* ETHIOPIA */
 .ethiopia {
-  height: 400px;
+  /* 내가 쓴 코드 ~~> */
+  /* height: 400px;
   display: flex;
+  background-image: url("../images/ethiopia_bg.png"); */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: relative;
+  height: 400px;
   background-image: url("../images/ethiopia_bg.png");
+  overflow: hidden;
 }
 .ethiopia::before{
-  display: block;
+  /* 내가 쓴 코드 ~~> */
+  /* display: block;
   position: relative;
   content: "";
   width: 400px;
   background-image: url("../images/ethiopia_before.png");
   left: -40px;
+  background-repeat: no-repeat; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  content: ""; /*content가 없으면 설정한 값이 들어가지 않음*/
+  position: absolute; /* => 자동으로 display:block; 설정이 됨.*/
+  bottom: 0;
+  left: -50px;
+  width: 425px;
+  height: 404px;
+  background-image: url("../images/ethiopia_before.png");
+  background-size: cover; /* 긴 축에 이미지 크기를 맞춤*/
   background-repeat: no-repeat;
 }
 .ethiopia::after {
-  content: "";
+  /* 내가 쓴 코드 ~~> */
+  /* content: "";
   width: 361px;
   background-image: url("../images/ethiopia_after.png");
+  background-repeat: no-repeat; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  content: ""; /*content가 없으면 설정한 값이 들어가지 않음*/
+  position: absolute; /* => 자동으로 display:block; 설정이 됨.*/
+  bottom: 0;
+  right: 0;
+  width: 361px;
+  height: 404px;
+  background-image: url("../images/ethiopia_after.png");
+  background-size: cover; /* 긴 축에 이미지 크기를 맞춤*/
   background-repeat: no-repeat;
 }
 .ethiopia .inner {
-  position: relative;
-  height: 100%;
+  /* 내가 쓴 코드 ~~> */
+  /* position: relative;
+  height: 100%; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
 }
 .ethiopia .inner .ethiopia__contents {
-  position: absolute;
+  /* 내가 쓴 코드 ~~> */
+  /* position: absolute;
   display: block;
-  top: 100px;
+  top: 100px; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: absolute;
+  width: 496px;
+  left: 0;
+  top: 120px;
 }
 .ethiopia .inner .ethiopia__item{
-  position: absolute;
+  /* 내가 쓴 코드 ~~> */
+  /* position: absolute;
   display: block;
+  left: -500px; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: absolute;
   left: -500px;
 }
 .ethiopia .inner .btn.btn--gold {
-  position: absolute;
+  /* 내가 쓴 코드 ~~> */
+  /* position: absolute;
   top: 250px;
-  left: 250px;
+  left: 250px; */
+  /* <~~ 내가 쓴 코드 */
+
+  /* 풀이 코드 */
+  position: absolute;
+  top: 270px;
+  left: 260px;
 }
