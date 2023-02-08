@@ -770,6 +770,9 @@ header .badges .badge img {
   width: 258px;
   top: 120px;
   left: 108px;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 2s;
 }
 .favorite .inner .fav__contents {
   /* 내가 쓴 코드 
@@ -782,6 +785,15 @@ header .badges .badge img {
   position: absolute;
   width: 362px;
   top: 370px;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.favorite:active .inner .fav__title, 
+.favorite:active .inner .fav__contents {
+  opacity: 1;
+  transform: translateX(0);
 }
 .favorite .inner .fav__imgs {
   /* 내가 쓴 코드 
