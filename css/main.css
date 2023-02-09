@@ -1072,12 +1072,18 @@ footer .inner .footer__sub-menu ul .contour{
   /* margin: 0 5px;  => 풀이코드: ul 태그에 space-between을 적용하면 해당 속성 지정 필요 X */
   /* font-weight: 100; => 풀이코드: ul 태그에 space-between을 적용하면 해당 속성 지정 필요 X */
 }
+/* FOOTER BTN */
 footer .inner .footer__btn {
-  display: flex;
-  justify-content: center;
+  /* display: flex; => 풀이코드: flex 지정 없이 버튼의 위치를 지정하는 연습 위해 주석처리 */
+  /* justify-content: center; => 풀이코드: flex 지정 없이 버튼의 위치를 지정하는 연습 위해 주석처리 */
+  text-align: center; /* => 풀이코드: 버튼 위치 센터로 지정 */
 }
 footer .inner .footer__btn .btn.btn--white{
   font-size: 12px;
+}
+footer .inner .footer__btn .btn.btn--white:hover{
+  background-color: transparent; /*배경 색을 없애고 투명하게 만들기*/
+  color: white;
 }
 footer .inner .footer__btn .btn.btn--white:nth-child(2){
   margin: 0 10px;
