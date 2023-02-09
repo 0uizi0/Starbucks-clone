@@ -993,11 +993,11 @@ header .badges .badge img {
 footer {
   /* position: relative; => 이미지 위치를 오른쪽으로 지정하기 위해 쓴 <내코드>*/
   background-color: #2c2a29;
-  height: 430px;
+  /* height: 430px; => 값을 지정하지 않아도 푸터 콘텐츠들의 길이 값을 더하면 해당 높이만큼 충족되어 주석처리 */
   padding: 30px 0;
 }
 footer .inner {
-  height: 430px;
+  /* height: 430px; => 값을 지정하지 않아도 푸터 콘텐츠들의 길이 값을 더하면 해당 높이만큼 충족되어 주석처리 */
 }
 
 /* FOOTER MENU */
@@ -1081,4 +1081,15 @@ footer .inner .footer__btn .btn.btn--white{
 }
 footer .inner .footer__btn .btn.btn--white:nth-child(2){
   margin: 0 10px;
+}
+footer .inner .footer__copylight {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 ;
+}
+footer .inner .footer__copylight p {
+  color: #999999;
+  font-size: 12px;
+  padding-bottom: 20px;
+  line-height: 1.5;
 }
