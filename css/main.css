@@ -991,7 +991,7 @@ header .badges .badge img {
 
 /* FOOTER */
 footer {
-  position: relative;
+  /* position: relative; => 이미지 위치를 오른쪽으로 지정하기 위해 쓴 <내코드>*/
   background-color: #2c2a29;
   height: 430px;
 }
@@ -1002,9 +1002,10 @@ footer .inner {
 /* FOOTER MENU */
 footer .inner .footer__menu {
   display: flex;
+  height: 200px;
 }
 footer .inner .footer__menu .left {
-  position: absolute;
+  /* position: absolute; => 이미지 위치를 오른쪽으로 지정하기 위해 쓴 <내코드> */
   width: 90%;
 }
 footer .inner .footer__menu .left .menu{
@@ -1034,14 +1035,30 @@ footer .inner .footer__menu .left .menu > li > ul > li:hover {
   cursor: pointer;
 }
 footer .inner .footer__menu .right {
-  position: absolute;
+  /* position: absolute; => 이미지 위치를 오른쪽으로 지정하기 위해 쓴 <내코드> */
   width: 10%;
-  right: -100px;
+  /* right: -100px; => 이미지 위치를 오른쪽으로 지정하기 위해 쓴 <내코드>*/
 }
-footer .inner .footer__menu .right img {}
+footer .inner .footer__menu .right img {
+  /* 풀이 코드 : 이미지 위치를 오른쪽으로 지정하기 위함 (position 속성 지정없이 적용 가능) */
+  float: right;
+}
 
-footer .inner .footer__sub-menu {}
-footer .inner .footer__sub-menu ul {}
-footer .inner .footer__sub-menu ul li{}
-footer .inner .footer__sub-menu ul li a {}
-footer .inner .footer__sub-menu ul .contour{}
+/* footer .inner .footer__sub-menu {
+  position: relative;
+  border: 1px solid red;
+}
+footer .inner .footer__sub-menu ul {
+
+  display: flex;
+}
+footer .inner .footer__sub-menu ul li{
+  
+}
+footer .inner .footer__sub-menu ul li a {
+  font-size: 14px;
+  color: white;
+}
+footer .inner .footer__sub-menu ul .contour{
+  color: white;
+} */
