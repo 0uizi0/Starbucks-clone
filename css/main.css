@@ -1072,5 +1072,13 @@ footer .inner .footer__sub-menu ul .contour{
   margin: 0 5px;
   font-weight: 100;
 }
-footer .inner .footer__btn {}
-footer .inner .footer__btn .btn.btn-white{}
+footer .inner .footer__btn {
+  display: flex;
+  justify-content: center;
+}
+footer .inner .footer__btn .btn.btn--white{
+  font-size: 12px;
+}
+footer .inner .footer__btn .btn.btn--white:nth-child(2){
+  margin: 0 10px;
+}
