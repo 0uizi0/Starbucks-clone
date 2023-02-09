@@ -1088,14 +1088,17 @@ footer .inner .footer__btn .btn.btn--white:hover{
 footer .inner .footer__btn .btn.btn--white:nth-child(2){
   margin: 0 10px;
 }
+/* FOOTER COPYLIGHT */
 footer .inner .footer__copylight {
-  display: flex;
-  justify-content: center;
+  /* display: flex; => 풀이코드: text-align:center;로 가운데 정렬을 하기 위해 해당 코드 주석처리*/
+  /* justify-content: center; => 풀이코드: text-align:center;로 가운데 정렬을 하기 위해 해당 코드 주석처리 */
+  text-align: center; /* => 풀이 코드:중앙 정렬 적용 */
   margin: 20px 0 0 ;
 }
 footer .inner .footer__copylight p {
   color: #999999;
   font-size: 12px;
   padding-bottom: 20px;
-  line-height: 1.5;
+  /* line-height: 1.5; => 배수가 아니라 픽셀로 줄간격 지정  */
+  line-height: 30px;
 }
