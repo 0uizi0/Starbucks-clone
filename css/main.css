@@ -990,17 +990,52 @@ header .badges .badge img {
 }
 
 /* FOOTER */
-footer {}
-footer .inner {}
+footer {
+  position: relative;
+  background-color: #2c2a29;
+  height: 430px;
+}
+footer .inner {
+  padding: 30px 0;
+}
 
 /* FOOTER MENU */
-footer .inner .footer__menu {}
-footer .inner .footer__menu .left {}
-footer .inner .footer__menu .left .menu{}
-footer .inner .footer__menu .left .menu > li{}
+footer .inner .footer__menu {
+  display: flex;
+}
+footer .inner .footer__menu .left {
+  position: absolute;
+  width: 90%;
+}
+footer .inner .footer__menu .left .menu{
+  display: flex;
+  height: 100%;
+}
+footer .inner .footer__menu .left .menu > li{
+  width: 20%;
+}
 footer .inner .footer__menu .left .menu > li > ul{}
-footer .inner .footer__menu .left .menu > li > ul > a{}
-footer .inner .footer__menu .left .menu > li > ul > li{}
-
-footer .inner .footer__menu .right {}
+footer .inner .footer__menu .left .menu > li > ul > a{
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin: 10px 0;
+}
+footer .inner .footer__menu .left .menu > li > ul > a:hover {
+  text-decoration: underline;
+}
+footer .inner .footer__menu .left .menu > li > ul > li{
+  color: white;
+  font-size: 12px;
+  padding: 5px 0;
+}
+footer .inner .footer__menu .left .menu > li > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .inner .footer__menu .right {
+  position: absolute;
+  width: 10%;
+  right: -100px;
+}
 footer .inner .footer__menu .right img {}
