@@ -1039,3 +1039,9 @@ footer .inner .footer__menu .right {
   right: -100px;
 }
 footer .inner .footer__menu .right img {}
+
+footer .inner .footer__sub-menu {}
+footer .inner .footer__sub-menu ul {}
+footer .inner .footer__sub-menu ul li{}
+footer .inner .footer__sub-menu ul li a {}
+footer .inner .footer__sub-menu ul .contour{}
