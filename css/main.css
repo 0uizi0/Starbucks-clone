@@ -113,7 +113,8 @@ header {
   background-color: #f6f5ef;
   border-top: 2px solid black;
   border-bottom: 1px solid #eae7e2;
-  z-index: 1;
+  /* z-index: 1; */
+  z-index: 999;
 }
 
 header > .inner {
@@ -528,9 +529,89 @@ header .badges .badge img {
   right: 20px;
   color: black;
 }
+.notice .notice-line .inner .inner__right a.show {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
 .notice .notice-line .inner .inner__right a span {
   font-size: 36px;
   display: block; /*중앙정렬 해결*/
+}
+
+/* PROMOTION */
+.notice .promotion {
+  position: relative;
+  height: 658px;
+  background-color: #f6f5ef;
+  overflow: hidden;
+  transition: height 0.4s;
+}
+.notice .promotion.hide {
+  height: 0px;
+}
+.notice .promotion .swiper {
+  position: absolute;
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%); /*부모요소(promotion)의 크기의 50% 이동 */
+  top: 40px;
+}
+.notice .promotion .swiper .swiper-wrapper {
+}
+.notice .promotion .swiper .swiper-wrapper .swiper-slide {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.notice .promotion .swiper .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion .swiper .swiper-wrapper .swiper-slide .btn {
+  position: absolute;
+  width: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.notice .promotion .swiper-button-prev,
+.notice .promotion .swiper-button-next {
+  position: absolute;
+  top: 250px;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #333;
+  color: #333; /*화살표 색상 적용*/
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+.notice .promotion .swiper-button-prev::after,
+.notice .promotion .swiper-button-next::after {
+  font-size: 24px;
+}
+
+.notice .promotion .swiper-button-prev {
+  left: 50%;
+  transform: translateX(-550px);
+}
+.notice .promotion .swiper-button-next {
+  right: 50%;
+  transform: translateX(550px);
+}
+
+.notice .promotion .swiper-pagination {
+}
+.notice .promotion .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.notice .promotion .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_on.png");
+  background-size: cover;
+  background-color: transparent;
 }
 
 /* REWARDS */
