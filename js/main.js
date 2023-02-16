@@ -31,3 +31,14 @@ searchInputEl.addEventListener("blur", function () {
  * 1번째 시도 : width 값을 부여 => 36px인지 아닌지로 ==> 잘못된 코드.
  * focus시 클래스 부여, click & blur시 클래스를 잃어버리게
  */
+
+// SWIPER
+// SWIPER NOTICE
+const swiperNotice = new Swiper(
+  ".notice .notice-line .inner .inner__left .swiper",
+  {
+    direction: "vertical",
+    loop: true,
+    autoplay: true,
+  }
+);
