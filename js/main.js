@@ -86,3 +86,36 @@ promotionToggleBtn.addEventListener("click", function () {
     promotionToggleBtn.classList.remove("show");
   }
 });
+
+// 애니메이션 파트
+// Visual
+window.onload = function () {
+  const visualSection = document.querySelector(".visual");
+  visualSection.classList.add("animate");
+};
+
+// 애니메이션 스크롤 파트
+// 엘살바도르
+window.addEventListener("scroll", function () {
+  console.log(window.scrollY);
+  if (window.scrollY > 100) {
+    const elsavadorSection = this.document.querySelector(".elsalvador");
+    elsavadorSection.classList.add("animate");
+  }
+  if (window.scrollY > 680) {
+    const ethiopiaSection = this.document.querySelector(".ethiopia");
+    ethiopiaSection.classList.add("animate");
+  }
+  if (window.scrollY > 1100) {
+    const favoriteSection = this.document.querySelector(".favorite");
+    favoriteSection.classList.add("animate");
+  }
+  if (window.scrollY > 1900) {
+    const magazineSection = this.document.querySelector(".magazine");
+    magazineSection.classList.add("animate");
+  }
+  if (window.scrollY > 2230) {
+    const storeSection = this.document.querySelector(".store");
+    storeSection.classList.add("animate");
+  }
+});
