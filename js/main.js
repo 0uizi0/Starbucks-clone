@@ -95,26 +95,29 @@ window.onload = function () {
 };
 
 // 애니메이션 스크롤 파트
-// 엘살바도르
 window.addEventListener("scroll", function () {
-  console.log(window.scrollY);
   if (window.scrollY > 100) {
+    // elsavador
     const elsavadorSection = this.document.querySelector(".elsalvador");
     elsavadorSection.classList.add("animate");
   }
   if (window.scrollY > 680) {
+    // ethiopia
     const ethiopiaSection = this.document.querySelector(".ethiopia");
     ethiopiaSection.classList.add("animate");
   }
   if (window.scrollY > 1100) {
+    // favorite
     const favoriteSection = this.document.querySelector(".favorite");
     favoriteSection.classList.add("animate");
   }
   if (window.scrollY > 1900) {
+    // magazine
     const magazineSection = this.document.querySelector(".magazine");
     magazineSection.classList.add("animate");
   }
   if (window.scrollY > 2230) {
+    // store
     const storeSection = this.document.querySelector(".store");
     storeSection.classList.add("animate");
   }
